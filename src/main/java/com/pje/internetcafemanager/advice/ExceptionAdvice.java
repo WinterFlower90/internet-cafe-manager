@@ -1,10 +1,10 @@
-package com.pje.basic.advice;
+package com.pje.internetcafemanager.advice;
 
-import com.pje.basic.enums.ResultCode;
-import com.pje.basic.exception.CMissingDataException;
-import com.pje.basic.exception.CNoMemberDataException;
-import com.pje.basic.model.CommonResult;
-import com.pje.basic.service.ResponseService;
+import com.pje.internetcafemanager.enums.ResultCode;
+import com.pje.internetcafemanager.exception.CMissingDataException;
+import com.pje.internetcafemanager.exception.CNoMemberDataException;
+import com.pje.internetcafemanager.model.CommonResult;
+import com.pje.internetcafemanager.service.ResponseService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

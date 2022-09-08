@@ -1,4 +1,4 @@
-package com.pje.basic.exception;
+package com.pje.internetcafemanager.exception;
 
 public class CNoMemberDataException extends RuntimeException {
     public CNoMemberDataException(String msg, Throwable t) {

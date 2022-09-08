@@ -1,9 +1,9 @@
-package com.pje.basic.service;
+package com.pje.internetcafemanager.service;
 
-import com.pje.basic.enums.ResultCode;
-import com.pje.basic.model.CommonResult;
-import com.pje.basic.model.ListResult;
-import com.pje.basic.model.SingleResult;
+import com.pje.internetcafemanager.enums.ResultCode;
+import com.pje.internetcafemanager.model.CommonResult;
+import com.pje.internetcafemanager.model.ListResult;
+import com.pje.internetcafemanager.model.SingleResult;
 import org.springframework.stereotype.Service;
 
 @Service

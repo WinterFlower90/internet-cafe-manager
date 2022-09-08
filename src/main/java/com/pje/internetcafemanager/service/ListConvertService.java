@@ -1,6 +1,6 @@
-package com.pje.basic.service;
+package com.pje.internetcafemanager.service;
 
-import com.pje.basic.model.ListResult;
+import com.pje.internetcafemanager.model.ListResult;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 

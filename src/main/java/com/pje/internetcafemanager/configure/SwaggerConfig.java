@@ -1,4 +1,4 @@
-package com.pje.basic.configure;
+package com.pje.internetcafemanager.configure;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
