@@ -27,6 +27,14 @@ public class FoodService {
     private final ComputerRepository computerRepository;
     private final OrderDetailRepository orderDetailRepository;
 
+    public Food gerFoodData(long id) {
+        return foodRepository.findById(id).orElseThrow(CMissingDataException::new);
+    }
+
+    public Computer getComputerData(long id) {
+        return computerRepository.findById(id).orElseThrow(CMissingDataException::new);
+    }
+
     public void setFood(FoodRequest request) {
         Food food = new Food.FoodBuilder(request).build();
         foodRepository.save(food);
