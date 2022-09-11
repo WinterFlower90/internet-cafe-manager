@@ -1,4 +1,4 @@
-package com.pje.internetcafemanager.model.orderDetail;
+package com.pje.internetcafemanager.model.food;
 
 import com.pje.internetcafemanager.enums.Order;
 import io.swagger.annotations.ApiModelProperty;

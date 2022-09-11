@@ -2,7 +2,7 @@ package com.pje.internetcafemanager.entity;
 
 import com.pje.internetcafemanager.enums.ComputerPartType;
 import com.pje.internetcafemanager.interfaces.CommonModelBuilder;
-import com.pje.internetcafemanager.model.replacement.PartReplacementRequest;
+import com.pje.internetcafemanager.model.computer.PartReplacementRequest;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

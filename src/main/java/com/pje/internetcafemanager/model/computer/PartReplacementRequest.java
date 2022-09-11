@@ -1,4 +1,4 @@
-package com.pje.internetcafemanager.model.replacement;
+package com.pje.internetcafemanager.model.computer;
 
 import com.pje.internetcafemanager.enums.ComputerPartType;
 import io.swagger.annotations.ApiModelProperty;

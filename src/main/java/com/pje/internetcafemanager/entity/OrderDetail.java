@@ -2,7 +2,8 @@ package com.pje.internetcafemanager.entity;
 
 import com.pje.internetcafemanager.enums.Order;
 import com.pje.internetcafemanager.interfaces.CommonModelBuilder;
-import com.pje.internetcafemanager.model.orderDetail.OrderDetailRequest;
+import com.pje.internetcafemanager.model.food.OrderDetailRequest;
+import com.pje.internetcafemanager.model.food.OrderStateRequest;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,11 +34,20 @@ public class OrderDetail {
     @Column(nullable = false, length = 30)
     private Order order; //주문 상태
 
+    @Column(nullable = false)
+    private LocalDateTime dateUpdate;
+
+    public void putOrderState(OrderStateRequest request) {
+        this.order = request.getOrder();
+        this.dateUpdate = LocalDateTime.now();
+    }
+
     private OrderDetail (OrderDetailBuilder builder) {
         this.computer = builder.computer;
         this.food = builder.food;
         this.dateOrder = builder.dateOrder;
         this.order = builder.order;
+        this.dateUpdate = builder.dateUpdate;
     }
 
     public static class OrderDetailBuilder implements CommonModelBuilder<OrderDetail> {
@@ -45,12 +55,14 @@ public class OrderDetail {
         private final Food food;
         private final LocalDateTime dateOrder;
         private final Order order;
+        private final LocalDateTime dateUpdate;
 
         public OrderDetailBuilder(Computer computer, Food food, OrderDetailRequest request) {
             this.computer = computer;
             this.food = food;
             this.dateOrder = LocalDateTime.now();
             this.order = request.getOrder();
+            this.dateUpdate = LocalDateTime.now();
         }
 
         @Override
